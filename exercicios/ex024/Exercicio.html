@@ -25,8 +25,16 @@
             padding: 8px;
         } 
         
-        tr.destaque {
+        .destaque {
             background-color: chartreuse;
+        }
+
+        col.preto {
+            background-color: rgba(0, 0, 0, 0.336);
+        }
+
+        col.vermelho {
+            background-color: rgba(255, 0, 0, 0.24);
         }
     </style>
 </head>
@@ -34,7 +42,13 @@
     <h1>Exercicio de Tabelas</h1>
 
     <table>
-        <caption >Cadastro</caption>
+        <colgroup>
+        <col class="preto">   
+        <col class="vermelho">
+        <col class="preto">
+        <col class="vermelho">
+    </colgroup>
+    <caption >Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
             <th scope="col">Sexo</th>
@@ -59,7 +73,7 @@
             <td>42</td>
             <td>Professor</td>
         </tr>
-        <tr>
+        <tr class="destaque">
             <td>Helio</td>
             <td>M</td>
             <td>19</td>
