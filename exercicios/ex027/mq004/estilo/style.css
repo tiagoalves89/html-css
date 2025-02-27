@@ -12,7 +12,7 @@
 
 
 html {
-    
+    width: 100vw;
     height: 100vh;
 }
 
@@ -24,7 +24,7 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.452);
-    width: vw;
+    width: 40vh;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
