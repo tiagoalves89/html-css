@@ -28,7 +28,7 @@ i#burguer {
     cursor: pointer;
 }
 
-i#burguer::hover {
+i#burguer:hover {
     background-color: white;
     color: black;
 }
