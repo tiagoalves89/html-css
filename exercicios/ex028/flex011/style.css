@@ -1,0 +1,44 @@
+@charset "UTF-8"
+
+div.container {
+    background-color: lightsalmon;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+div#cxA1 {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+div#cxB2 {
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+div#cxC3 {
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+div#cxA4 {
+    flex-basis: 200px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+div#cxB5 {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    flex-grow: 2;
+}
+
+div#cxC6 {
+    flex-basis: 200px;
+    flex-shrink: 2;
+    flex-grow: 1;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div#cxA {
+            /*flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 1;*/
+
+            flex: 0 1 200px;
+        }
+
+        div#cxB {
+            /*flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 1;*/
+
+            flex: 0 1 150px;
+        }
+
+        div#cxC {
+            /*flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 1;*/
+
+            flex: 0 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div><br>
+    <div class="container">
+        <div class="item" id="cxA1">A</div>
+        <div class="item" id="cxB2">B</div>
+        <div class="item" id="cxC3">C</div>
+    </div><br>
+    <div class="container">
+        <div class="item" id="cxA4">A</div>
+        <div class="item" id="cxB5">B</div>
+        <div class="item" id="cxC6">C</div>
+    </div>
+</body>
+</html>
