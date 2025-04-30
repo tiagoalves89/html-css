@@ -7,30 +7,46 @@
     <style>
         .container {
             border: 3px solid blue;
-            height: 250px;
+            height: 320px;
             display: grid;
             grid-template-columns: auto auto auto; /* FARA QUE FAÇA 3 COLUNAS */
             grid-template-rows: auto auto auto; 
-            gap: 5px;
+            gap: 10px;
+            align-items: stretch;    /* ALING SEMPRE SERA A ORIENTAÇAO NA VERTICAL */
+            justify-items: normal;  /* JUSTIFY SEMPRE SERA A ORIENTACAO NA HORIZONTAL */
+            align-content: normal;
+            justify-content: normal;
         }
         
         .item {
             border: 3px solid red;
             padding: 6px;
+            height: 305px;
+            width: 200px;
+        }
+
+        .item-b {
+            border: 3px solid green;
+            margin: 6px;
+            height: 240px;
+            width: 250px;
+            margin-top: 12%;
+        }
+
+        .item-c {
+            border: 3px solid red;
+            padding: 6px;
+            height: 305px;
+            width: 200px;
+            margin-right: -15px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at laborum quaerat excepturi optio, autem voluptatibus. Optio expedita libero accusantium soluta qui cum commodi quam. Provident quia placeat dignissimos omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ex blanditiis, ut cupiditate vero delectus possimus rem molestiae modi, explicabo fugiat. Dolor eos nemo, vero ipsum illum a doloremque consequuntur!</div>
+        <div class="item-b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, rerum sapiente voluptatum beatae facere in eius officia culpa repellendus, hic ipsum dignissimos eaque. Quaerat suscipit quis autem eum deserunt molestiae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ipsam ut ad nisi esse dolores temporibus rem, beatae, officiis facere minus tenetur quo quaerat quia fuga alias voluptates nam quisquam?</div>
+        <div class="item-c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus tenetur labore impedit sed quasi mollitia assumenda magni! Fugiat perferendis nihil similique, obcaecati ad blanditiis consequuntur provident sit beatae repellat? Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque error dolorum, quos voluptate ab et similique corrupti ad accusantium placeat dolorem alias magnam dolore necessitatibus reprehenderit eum earum quibusdam.</div>
     </div>
 </body>
 </html>

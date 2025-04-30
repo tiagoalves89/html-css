@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout pratica</title>
+    <style>
+        .container {
+            border: 3px solid blue;
+            height: 320px;
+            display: grid;
+            grid-template-columns: auto auto auto; /* FARA QUE FAÇA 3 COLUNAS */
+            grid-template-rows: auto auto auto; 
+            gap: 10px;
+            align-items: stretch;    /* ALING SEMPRE SERA A ORIENTAÇAO NA VERTICAL */
+            justify-items: normal;  /* JUSTIFY SEMPRE SERA A ORIENTACAO NA HORIZONTAL */
+            align-content: normal;
+            justify-content: space-between;
+        }
+        
+        .item {
+            border: 3px solid red;
+            padding: 5px;
+            width: 200px;
+            height: 305px;
+        }
+
+        .item-b {
+            border: 3px solid green;
+            width: 250px;
+            height: 150px;
+            padding: 5px;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta reiciendis velit ab molestias! Inventore doloremque quibusdam nam officiis doloribus at deleniti dolorem reprehenderit error sequi expedita saepe, aspernatur veniam soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas consequuntur quae ipsam aperiam velit hic et. Voluptatem suscipit nobis, molestias  </div>
+        <div class="item-b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid magni necessitatibus dolores maiores corrupti ratione possimus. Tenetur optio at numquam in pariatur. Corrupti quasi distinctio molestiae asperiores ea architecto.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos ullam praesentium neque placeat saepe provident! Ipsam, culpa recusandae laudantium iste aliquam fugiat impedit minima optio officiis, necessitatibus quos commodi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi hic, ea velit incidunt, consequuntur perspiciatis in alias aspernatur amet quidem architecto. Illo id debitis animi? Sapiente ad natus officia. Provident.</div>
+    </div>
+</body>
+</html>
