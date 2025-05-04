@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#content {
+    margin-left: 10px;
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 300px;
+    background-color: rgba(128, 128, 128, 0.508);
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#content1 {
+    background-color: rgba(128, 128, 128, 0.508);
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 150px;
+}
+
+#info {
+    padding: 10px;
+}
+
+.bicho {
+    margin: 5px;
+}
+
+#container {
+    display: flex;
+}
+
+.botao {
+    margin-left: 10px;
+}

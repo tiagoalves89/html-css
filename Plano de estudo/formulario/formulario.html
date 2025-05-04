@@ -3,13 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
+    <style>
+       /* form {
+            background-color: gray;
+            width: 300px;
+            height: 400pxpx;
+            border-radius: 5px;
+            box-shadow: rgba(0,0,0,0.6);
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        } */
+        .enviar {
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .enviar:hover {
+            background-color: lightgray;
+            transition: 0.5s;
+        }
+    </style>
 </head>
 <body>
     <h1>Formularios</h1>
+    <!--<form action="arquivo.php" method="get"> METADO QUE FAZ COM QUE OS ARQUIVOS SEJAM ENVIADO PARA O ARQUIVO SELECIONADO -->
     <form>
-        <input type="text" placeholder="digite seu nome">
+            <div id="container">
+                <div id="content1">
+                    <section id="info">
+                        <label for="campo-nome">Nome:</label>   <!-- LEGENDA PARA O NOME -->
+                        <input id="campo-nome" type="text" placeholder="digite seu nome" required>   <!-- INPUT TYPE TEXT -->
+                        <br><br>
+                        <label for="campo-email">email:</label>
+                        <input id="campo-email" type="email" placeholder="digite seu email" required>    <!-- INPUT TYPE EMAIL -->
+                        <br><br>
+                        <label for="campo-senha">Senha:</label>
+                        <input id="campo-senha" type="password" placeholder="digite sua senha" required>     <!-- INPUT TYPE PASSWORD -->
+                        <br><br>
+                        <input type="submit" value="enviar formulario" class="enviar">
+                    </section>
+                </div>   <!-- INPUT TYPE SUBMIT -->
+                <div id="content">
+                <section id="bicho">
+                    <h2 class="titulo">Animal de estimaçao</h2>
+                    <!-- INPUT TYPE RADIO ONDE O NAME TEM QUE SER IGUAL PARA TODOS -->
+                    <input class="bicho" type="radio" id="dog" name="animal" value="cachorro">
+                    <label for="dog">Cachorro</label><br>
+                    <input class="bicho" type="radio" id="cat" name="animal" value="gato">
+                    <label for="cat">gato</label><br>
+                    <input class="bicho" type="radio" id="bierd" name="animal" value="gato">
+                    <label for="bierd">passarinho</label><br>
+                    <br><br>
+                </section>
+                <section id="itens">
+                    <h2 class="titulo">Oque voce tem em casa</h2>
+                    <!-- INPUT TYPE CHECKBOX OONDE VOCE PODERA MARCAR VARIAS OPÇOESB -->
+                    <input type="checkbox" id="item1" name="item1" value="tv">
+                    <label for="item1">Televisao</label><br>
+                    <input type="checkbox" id="item2" name="item2" value="geladeira">
+                    <label for="item2">geladeira</label><br>
+                    <input type="checkbox" id="item3" name="item3" value="computador">
+                    <label for="item3">computador</label><br><br>
+                </section>
+                    <input type="submit" class="botao" value="enviar formulario" class="enviar">
+                    </div>
+            </div>
+
+        <!-- CAMPO SELECT -->
+        <h2>Escolha uma cor:</h2>
+        <select name="cores">
+        <!-- Option -->
+            <option selected disabled value="">Selecione uma cor:</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Verde">Verde</option>
+        </select>
+        
+        <h2>Digite sua mensagem:</h2>
+        <!-- TEXTAREA -->
+        <textarea name="texto" placeholder="Digite um texto" rows="15" cols="35"></textarea>
     </form><br>
     <hr><br>
+
+    <!-- BUTTON -->
+     <button>Clique aqui</button>
 </body>
 </html>
