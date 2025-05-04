@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, aside, footer {
+    display: flex;
+    margin: 3px;
+    background-color: #a1a1a1;
+}
+
+header {       
+    flex: 1 1 100vw;   
+
+}
+
+nav {   
+    flex: 1 1 200px;   
+}
+
+main { 
+    flex: 20 1 500px;
+}
+
+aside {
+    flex: 1 1 200px;
+}
+
+footer {   
+    flex: 1 1 100vw;  
+}
